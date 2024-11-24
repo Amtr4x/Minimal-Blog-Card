@@ -10,36 +10,40 @@
       type="image/x-icon"
       sizes="96x96"
     />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
     <title>devChallenges.io | Minimal Blog Card</title>
   </head>
   <body>
-    <div>
+    <div class="card__container">
       <picture>
         <source
           src="./resources/Cactus@2x.jpg"
           media="(min-width: 600px)"
-          width="300"
-          height="150"
+          width="370"
+          height="210"
         />
         <img
           src="./resources/Cactus.jpg"
           alt="a beautiful cactus with a pink background"
-          width="300"
-          height="150"
+          width="370"
+          height="210"
         />
       </picture>
-      <div><p>Design</p></div>
-      <div>
+      <div class="card__description">
+        <div class="tag"><p class="tag__text">Design</p></div>
         <h2>Embracing Minimalism</h2>
-        <p>
+        <p class="card__description-text">
           From minimalist sculptures to minimalist paintings, this blog will
           inspire you to appreciate the beauty that lies in simplicity.
         </p>
-        <hr />
       </div>
-      <p>Annie Spratt</p>
+      <p class="author_name">Annie Spratt</p>
     </div>
   </body>
 </html>
